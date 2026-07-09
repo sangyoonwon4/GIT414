@@ -5,20 +5,37 @@ body {
     padding: 20px;
 }
 
+header, nav, footer {
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
 @media (min-width: 768px) {
-    body {
-        background-color: #f4f4f4;
+    main {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
-    body {
-        background-color: #e2e2e2;
+    main {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 1440px) {
-    body {
-        background-color: #cccccc;
+    main {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
